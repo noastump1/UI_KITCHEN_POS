@@ -1,9 +1,0 @@
-c:\users\noastump\documents\visual studio 2013\Projects\KitchenPOS_UI\KitchenPOS_UI\bin\Debug\KitchenPOS_UI.exe.config
-c:\users\noastump\documents\visual studio 2013\Projects\KitchenPOS_UI\KitchenPOS_UI\bin\Debug\KitchenPOS_UI.exe
-c:\users\noastump\documents\visual studio 2013\Projects\KitchenPOS_UI\KitchenPOS_UI\bin\Debug\KitchenPOS_UI.pdb
-c:\users\noastump\documents\visual studio 2013\Projects\KitchenPOS_UI\KitchenPOS_UI\obj\Debug\KitchenPOS_UI.csprojResolveAssemblyReference.cache
-c:\users\noastump\documents\visual studio 2013\Projects\KitchenPOS_UI\KitchenPOS_UI\obj\Debug\KitchenPOS_UI.Form1.resources
-c:\users\noastump\documents\visual studio 2013\Projects\KitchenPOS_UI\KitchenPOS_UI\obj\Debug\KitchenPOS_UI.Properties.Resources.resources
-c:\users\noastump\documents\visual studio 2013\Projects\KitchenPOS_UI\KitchenPOS_UI\obj\Debug\KitchenPOS_UI.csproj.GenerateResource.Cache
-c:\users\noastump\documents\visual studio 2013\Projects\KitchenPOS_UI\KitchenPOS_UI\obj\Debug\KitchenPOS_UI.exe
-c:\users\noastump\documents\visual studio 2013\Projects\KitchenPOS_UI\KitchenPOS_UI\obj\Debug\KitchenPOS_UI.pdb
