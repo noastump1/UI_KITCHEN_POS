@@ -34,7 +34,13 @@ namespace Project1 {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^  button1;
+	private: System::Windows::Forms::Button^  btn_enter;
+	private: System::Windows::Forms::Label^  label1;
+
+
+
+	protected:
+
 	protected:
 
 	private:
@@ -50,32 +56,44 @@ namespace Project1 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->btn_enter = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
-			// button1
+			// btn_enter
 			// 
-			this->button1->Location = System::Drawing::Point(126, 156);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
-			this->button1->TabIndex = 0;
-			this->button1->Text = L"button1";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
+			this->btn_enter->Location = System::Drawing::Point(133, 164);
+			this->btn_enter->Name = L"btn_enter";
+			this->btn_enter->Size = System::Drawing::Size(75, 23);
+			this->btn_enter->TabIndex = 0;
+			this->btn_enter->Text = L"Enter";
+			this->btn_enter->UseVisualStyleBackColor = true;
+			this->btn_enter->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(75, 69);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(35, 13);
+			this->label1->TabIndex = 1;
+			this->label1->Text = L"label1";
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(284, 262);
-			this->Controls->Add(this->button1);
+			this->ClientSize = System::Drawing::Size(407, 357);
+			this->Controls->Add(this->label1);
+			this->Controls->Add(this->btn_enter);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 	}
-	};
+};
 }
