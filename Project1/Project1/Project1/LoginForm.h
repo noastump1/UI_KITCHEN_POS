@@ -35,7 +35,11 @@ namespace Project1 {
 			}
 		}
 	private: System::Windows::Forms::Button^  btn_enter;
-	private: System::Windows::Forms::Label^  label1;
+	private: System::Windows::Forms::Label^  lb_user;
+	private: System::Windows::Forms::Label^  lb_pass;
+	private: System::Windows::Forms::TextBox^  txtbox_User;
+	private: System::Windows::Forms::TextBox^  txtbox_Pass;
+
 
 
 
@@ -57,12 +61,15 @@ namespace Project1 {
 		void InitializeComponent(void)
 		{
 			this->btn_enter = (gcnew System::Windows::Forms::Button());
-			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->lb_user = (gcnew System::Windows::Forms::Label());
+			this->lb_pass = (gcnew System::Windows::Forms::Label());
+			this->txtbox_User = (gcnew System::Windows::Forms::TextBox());
+			this->txtbox_Pass = (gcnew System::Windows::Forms::TextBox());
 			this->SuspendLayout();
 			// 
 			// btn_enter
 			// 
-			this->btn_enter->Location = System::Drawing::Point(133, 164);
+			this->btn_enter->Location = System::Drawing::Point(172, 185);
 			this->btn_enter->Name = L"btn_enter";
 			this->btn_enter->Size = System::Drawing::Size(75, 23);
 			this->btn_enter->TabIndex = 0;
@@ -70,24 +77,50 @@ namespace Project1 {
 			this->btn_enter->UseVisualStyleBackColor = true;
 			this->btn_enter->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
-			// label1
+			// lb_user
 			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(75, 69);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(35, 13);
-			this->label1->TabIndex = 1;
-			this->label1->Text = L"label1";
+			this->lb_user->AutoSize = true;
+			this->lb_user->Location = System::Drawing::Point(75, 69);
+			this->lb_user->Name = L"lb_user";
+			this->lb_user->Size = System::Drawing::Size(58, 13);
+			this->lb_user->TabIndex = 1;
+			this->lb_user->Text = L"Username:";
+			// 
+			// lb_pass
+			// 
+			this->lb_pass->AutoSize = true;
+			this->lb_pass->Location = System::Drawing::Point(77, 129);
+			this->lb_pass->Name = L"lb_pass";
+			this->lb_pass->Size = System::Drawing::Size(56, 13);
+			this->lb_pass->TabIndex = 2;
+			this->lb_pass->Text = L"Password:";
+			// 
+			// txtbox_User
+			// 
+			this->txtbox_User->Location = System::Drawing::Point(162, 66);
+			this->txtbox_User->Name = L"txtbox_User";
+			this->txtbox_User->Size = System::Drawing::Size(100, 20);
+			this->txtbox_User->TabIndex = 3;
+			// 
+			// txtbox_Pass
+			// 
+			this->txtbox_Pass->Location = System::Drawing::Point(162, 126);
+			this->txtbox_Pass->Name = L"txtbox_Pass";
+			this->txtbox_Pass->Size = System::Drawing::Size(100, 20);
+			this->txtbox_Pass->TabIndex = 4;
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(407, 357);
-			this->Controls->Add(this->label1);
+			this->Controls->Add(this->txtbox_Pass);
+			this->Controls->Add(this->txtbox_User);
+			this->Controls->Add(this->lb_pass);
+			this->Controls->Add(this->lb_user);
 			this->Controls->Add(this->btn_enter);
 			this->Name = L"MyForm";
-			this->Text = L"MyForm";
+			this->Text = L"Login";
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
